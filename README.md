@@ -9,6 +9,18 @@ El proyecto llevado ha cabo a consistido en:
 
 Para más detalle mirar los respectivos informes.
 
+## Requisitos para ejecutar los códigos ⚙️
+
+Los paquetes de terceros de Python que deben tener instalados para la ejecución de los códigos son:
+
+- [numpy](https://numpy.org/)
+- [matplotlib](https://matplotlib.org/)
+- [pandas](https://pandas.pydata.org/)
+- [scipy](https://scipy.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [imageio](https://pypi.org/project/imageio/)
+
+
 ## Estructura del repositorio 📋  
 
 Se va a detallar brevemente el contenido de cada archivo de código por orden de pruebas, teniendo en cuenta que en total han sido cuatro: 
