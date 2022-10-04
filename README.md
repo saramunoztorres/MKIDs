@@ -11,9 +11,45 @@ Para más detalle mirar los respectivos informes.
 
 ## Estructura del repositorio 📋  
 
-Se va a detallar brevemente el contenido de cada archivo de código por orden de pruebas.
+Se va a detallar brevemente el contenido de cada archivo de código por orden de pruebas, teniendo en cuenta que en total han sido cuatro: 
+
+1. Prueba inicial del criostato (anterior a la beca)
+2. Prueba del criostato con el montaje interno de fábrica
+3. Prueba del criostato con el montaje de los MKIDs
+4. Prueba de caracterización de los MKIDs.
+
+Además, en la carpeta `\Datos\` se tienen todos los archivos necesarios para la ejecución de los códigos, que igualmente se va a especificar a qué código pertenece cada uno.
 
 #### Prueba del criostato con el montaje interno predeterminado
 
-`Test_Cryo_1file&graph`
-`Test_Cryo_1_stability.ipynb`
+1. `Test_Cryo_1file&graph` -  `\Datos\PruebaCryo-1\` y `\Datos\Test_1_Cryo.csv`
+2. `Test_Cryo_1_stability.ipynb` - `\Datos\Test_1_Cryo.csv`
+
+El primer archivo contiene el código para armar el csv y graficar las distintas magnitudes de estudio del criostato. 
+El segundo archivo calculas las estabilidades de las distintas etapas en cada control.
+
+#### Pruebas del criostato con el montaje de los MKIDs
+
+1. `Test_Cryo+MKIDs_graph.ipynb` - `\Datos\PruebaCryo-MKID-1\s21051_SAT_MGB_2022_08_16_10;01.csv`
+
+Se muestran las gráficas de las magnitudes del criostato de la primera prueba con los MKIDs en el interior del criostato.
+
+#### Pruebas de caracterización de los MKIDs
+
+1. `MKIDs_csvFiles_convert&graph.ipynb` - `\Datos\MKID\`
+2. `Test_MKIDs_1.ipynb` - `\Datos\MKID\`
+
+El primer código adecúa los archivos csv descargados del VNA para su correcta lectura.
+El segundo archivo contiene todo el análisis de caracterización realizado sobre los MKIDs.
+
+#### Prueba inicial y comparativas entre pruebas
+
+1. `Test_Cryo_Initial.ipynb` - `\Datos\Test_Initial_Cryo.csv`
+2. `Test_Cryo&Cryo+MKIDs_compare.ipynb` - `\Datos\PruebaCryo-MKID-1\s21051_SAT_MGB_2022_08_16_10;01.csv` y `\Datos\Test_1_Cryo.csv`
+3. `Comparation_Tests_0&2.ipynb` - `\Datos\PruebaCryo-MKID-1\s21051_SAT_MGB_2022_08_16_10;01.csv` y `\Datos\Test_Initial_Cryo.csv`
+
+El primer código arregla el archivo de la prueba del criostato realizada anteriormente a mi estancia, y determina estabilidades del mismo.
+El segundo compara la prueba realizada del criostato sin y con el montaje interno de los MKIDs.
+El tercero compara la prueba inicial y la prueba con el montaje interno de los MKIDs.
+
+Por último, el archivo `Graficas presentación.ipynb`contiene los códigos para la creación de las gráficas empleadas en la presentación final.
